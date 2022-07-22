@@ -339,7 +339,6 @@ h1 {
   background-image: url("images/illustration-devices.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  border: 2px solid red;
 }
 @media (max-width: 63.9375em) {
   .main .image {
@@ -347,7 +346,7 @@ h1 {
     left: 60%;
     top: 0%;
     height: 40vh;
-    background-size: 70%;
+    background-size: 100%;
   }
 }
 @media (max-width: 39.9375em) {
