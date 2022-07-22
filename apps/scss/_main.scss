@@ -67,25 +67,30 @@
             .btn-2 {
                 color: $grayishBlue;
                 letter-spacing: 2px;
+                font-size: 0.875rem;
             }
         }
     }
 
     .image {
-        border: 2px solid red;
         height: 50vh;
         position: absolute;
         width: 140%;
         left: 60%;
         top: -20%;
-        background-image: url('/images/illustration-devices.svg');
+        background-image: url('images/illustration-devices.svg');
         background-repeat: no-repeat;
         background-size: contain;
+        border: 2px solid red;
 
+        @include breakpoint-down(medium){
+            width: 70%;
+            left: 50%;
+            top: 0%;
+            height: 40vh;
+            background-size: 70%;
+        }
 
-        // @include breakpoint-down(medium){
-        //     width: 100%;
-        // }
 
         @include breakpoint-down(small){
             width: 100%;

@@ -28,6 +28,7 @@ body {
 
     @include breakpoint-down(medium){
         width: 100%;
+        overflow-x: hidden;
     }
 
     @include breakpoint-down(small){
@@ -78,6 +79,15 @@ a,a:visited,a:hover {
 .container {
     width: 71.25rem;
     margin: 0 auto;
+
+
+    @include breakpoint-down(medium){
+        width: 100%;
+    }
+
+    @include breakpoint-down(small){
+        width: 100%;
+    }
 }
 
 .flex {
@@ -117,6 +127,11 @@ a,a:visited,a:hover {
     right: 0;
     border-radius: 0 0 0 3.75rem;
 
+    @include breakpoint-down(medium){
+        width: 60%;
+        height: 30%;
+    }
+
     @include breakpoint-down(small){
         height: 50%;
     }
@@ -139,7 +154,8 @@ a,a:visited,a:hover {
 }
 
 .open {
-    display: block;
+    // display: block;
+    opacity: 1;
 }
 
 h1 {
@@ -147,5 +163,9 @@ h1 {
     text-transform: uppercase;
     color: $veryDarkBlue;
     font-weight: 700;
+
+    @include breakpoint-down(medium){
+        font-size: 2rem;
+    }
 }
 
