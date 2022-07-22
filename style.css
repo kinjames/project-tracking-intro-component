@@ -75,6 +75,21 @@ a, a:visited, a:hover {
   width: 71.25rem;
   margin: 0 auto;
 }
+@media (max-width: 87.4375em) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 63.9375em) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 39.9375em) {
+  .container {
+    width: 100%;
+  }
+}
 
 .flex {
   display: flex;
@@ -130,6 +145,7 @@ a, a:visited, a:hover {
 
 .open {
   display: block;
+  opacity: 1;
 }
 
 h1 {
@@ -155,6 +171,11 @@ h1 {
   height: 5vh;
 }
 @media (max-width: 87.4375em) {
+  .header .nav-bar {
+    width: 100%;
+  }
+}
+@media (max-width: 63.9375em) {
   .header .nav-bar {
     width: 100%;
   }
@@ -296,6 +317,7 @@ h1 {
 .main .text-cta .btns .btn-2 {
   color: hsl(231deg, 7%, 65%);
   letter-spacing: 2px;
+  font-size: 0.875rem;
 }
 .main .image {
   border: 2px solid red;
@@ -304,7 +326,7 @@ h1 {
   width: 140%;
   left: 60%;
   top: -20%;
-  background-image: url("/images/illustration-devices.svg");
+  background-image: url("images/illustration-devices.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
