@@ -153,9 +153,28 @@ a,a:visited,a:hover {
 
 }
 
+.burger {
+
+    > span:first-child{
+        transform: rotate(45deg);
+    }
+    
+    > span:nth-child(2){
+        opacity: 0;
+    }
+    
+    > span:last-child{
+        transform: rotate(-45deg);
+    }
+
+}
+
+.hide {
+    display: none;
+}
+
 .open {
-    // display: block;
-    opacity: 1;
+    display: block;
 }
 
 h1 {

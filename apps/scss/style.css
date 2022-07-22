@@ -145,8 +145,22 @@ a, a:visited, a:hover {
   text-decoration: underline;
 }
 
+.burger > span:first-child {
+  transform: rotate(45deg);
+}
+.burger > span:nth-child(2) {
+  opacity: 0;
+}
+.burger > span:last-child {
+  transform: rotate(-45deg);
+}
+
+.hide {
+  display: none;
+}
+
 .open {
-  opacity: 1;
+  display: block;
 }
 
 h1 {
@@ -247,7 +261,6 @@ h1 {
   margin-top: 1.5rem;
   border-radius: 5px;
   z-index: 10000;
-  opacity: 0;
 }
 .header .mobile-menu .nav-menu-mobile {
   display: flex;
@@ -339,15 +352,14 @@ h1 {
   background-image: url("images/illustration-devices.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  border: 2px solid red;
 }
 @media (max-width: 63.9375em) {
   .main .image {
-    width: 70%;
-    left: 50%;
+    width: 60%;
+    left: 60%;
     top: 0%;
     height: 40vh;
-    background-size: 70%;
+    background-size: 100%;
   }
 }
 @media (max-width: 39.9375em) {

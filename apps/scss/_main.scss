@@ -81,14 +81,13 @@
         background-image: url('images/illustration-devices.svg');
         background-repeat: no-repeat;
         background-size: contain;
-        border: 2px solid red;
 
         @include breakpoint-down(medium){
-            width: 70%;
-            left: 50%;
+            width: 60%;
+            left: 60%;
             top: 0%;
             height: 40vh;
-            background-size: 70%;
+            background-size: 100%;
         }
 
 
