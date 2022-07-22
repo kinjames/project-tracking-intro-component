@@ -1,0 +1,99 @@
+.main{
+
+    position: relative;
+
+    @include breakpoint-down(medium){
+        width: 100%;
+
+    }
+
+    @include breakpoint-down(small){
+        width: 100%;
+        margin-top: 3.125rem;
+    }
+
+    .text-cta {
+        width: 45%;
+
+        @include breakpoint-down(small){
+            width: 100%;
+            margin-top: 14rem;
+            padding: 3rem 0;
+        }
+    
+        .main-header{
+            text-transform: uppercase;
+            font-family: 'Barlow Condensed', sans-serif;
+            letter-spacing: 3px;
+            color: $grayishBlue;
+    
+            .small {
+                padding: 2px 10px;
+                border-radius: 20px;
+                color: $white;
+                text-align: center;
+                background-color: $veryDarkBlue;
+            }
+    
+    
+        }
+    
+        .small-text {
+            color: $darkGrayishBlue;
+            margin-bottom: 3rem;
+    
+        }
+    
+        .btns {
+            gap: 1.25rem;
+            font-size: 1rem;
+    
+            a {
+                text-transform: uppercase;
+                font-family: 'Barlow Condensed', sans-serif;
+            }
+    
+            .btn-1 {
+                width: 150px;
+                text-align: center;
+                height: 45px;
+                padding-inline: 10px;
+                border-radius: 0.5rem;
+                background-color: $red;
+                color: $white;
+                font-weight: 400;
+            }
+    
+            .btn-2 {
+                color: $grayishBlue;
+                letter-spacing: 2px;
+            }
+        }
+    }
+
+    .image {
+        border: 2px solid red;
+        height: 50vh;
+        position: absolute;
+        width: 140%;
+        left: 60%;
+        top: -20%;
+        background-image: url('/images/illustration-devices.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+
+
+        // @include breakpoint-down(medium){
+        //     width: 100%;
+        // }
+
+        @include breakpoint-down(small){
+            width: 100%;
+            left: 10%;
+            top: 0%;
+            height: 50vh;
+            background-size: 140%;
+        }
+
+    }
+}

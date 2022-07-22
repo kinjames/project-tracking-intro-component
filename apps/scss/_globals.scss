@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+// font-family: 'Barlow', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+// font-family: 'Barlow Condensed', sans-serif;
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,*::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+    width: 100%;
+    height: 100vh;
+    padding-inline: 1.25rem;
+    font-size: $font-med;
+    overflow-x: hidden;
+
+    @include breakpoint-down(large){
+        width: 100%;
+    }
+
+    @include breakpoint-down(medium){
+        width: 100%;
+    }
+
+    @include breakpoint-down(small){
+        width: 100%;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img,svg {
+    max-width: 100%;
+}
+
+h1,h2,h3,h4 {
+    margin-top: 0px;
+}
+
+.nav-font {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.hide-for-mobile {
+    //Hide for mobile and tablets
+    @include breakpoint-down(small){
+        display: none;
+    }
+}
+
+a,a:visited,a:hover {
+    text-decoration: none;
+}
+
+
+
+.hide-for-desktop {
+
+    @include breakpoint-up(medium){
+        display: none;
+    }
+}
+
+.container {
+    width: 71.25rem;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    &_reverse{
+        @include breakpoint-down(small){
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+
+    &_row {
+        flex-direction: row;
+
+    }
+
+    &_col {
+        flex-direction: column;
+    }
+    &-jc-sb {
+        justify-content: space-between;
+    }
+    &-jc-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+.blue-bg{
+    height: 60%;
+    width: 50%;
+    background-color: $lightGrayishBlue;
+    z-index: -1000;
+    position: fixed;
+    right: 0;
+    border-radius: 0 0 0 3.75rem;
+
+    @include breakpoint-down(small){
+        height: 50%;
+    }
+}
+
+
+.nav-link {
+    color: $veryDarkBlue;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+   font-weight: 700;
+    letter-spacing: 0.1875rem;
+
+        &:hover{
+            text-decoration: underline;
+        }
+
+
+}
+
+.open {
+    display: block;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: $veryDarkBlue;
+    font-weight: 700;
+}
+
